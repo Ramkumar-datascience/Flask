@@ -1,0 +1,24 @@
+<h1>This is index page</h1>
+
+<h2>Welcome to {{ var }}</h2>
+List of Item are : <br>
+{{ lst }}<br>
+
+Using for loop: <br>
+{% for i in lst %}
+  {{ i }} <br>
+{% endfor %}
+<br><br>
+{% for i,j in dict.items() %}
+  {{i}} : {{j}}<br>
+{% endfor %}
+<br><br>
+{% for i in dict %}
+  {{i}} : {{dict[i]}}<br>
+{% endfor %}
+
+{% if 'chicken' in lst %}
+  <h1>Item available</h1>
+{% else %}
+  <h1>Item not available</h1>
+{% endif %}
